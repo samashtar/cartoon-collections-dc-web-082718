@@ -7,7 +7,8 @@ planateer_calls.collect {|x| "#{x.capitalize}!"}
 end
 
 def long_planeteer_calls (call)
-  call.any? 
+  call.any? {|x| x>4}
+  
 end 
 
 def find_the_cheese# code an argument here
